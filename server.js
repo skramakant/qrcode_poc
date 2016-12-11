@@ -1,18 +1,18 @@
-Object.size = function(obj) {
+/*Object.size = function(obj) {
   var size = 0, key;
   for (key in obj) {
     if (obj.hasOwnProperty(key)) size++;
   }
   return size;
-};
+};*/
 //var ip = process.env.OPENSHIFT_NODEJS_IP;
 
 var http = require("http");
 var fs = require("fs");
 var path = require("path");
 
-var ip = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
-var port1      = process.env.OPENSHIFT_NODEJS_PORT || 3001;
+var ip = '127.0.0.1'; //process.env.OPENSHIFT_NODEJS_IP ||
+var port1      = 3001;//process.env.OPENSHIFT_NODEJS_PORT ||
 var port2      = 8081;
 
 var checkMimeType = true;
