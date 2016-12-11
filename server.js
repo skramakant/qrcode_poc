@@ -11,8 +11,8 @@ var http = require("http");
 var fs = require("fs");
 var path = require("path");
 
-var ip = '127.0.0.1'; //process.env.OPENSHIFT_NODEJS_IP ||
-var port1      = 3001;//process.env.OPENSHIFT_NODEJS_PORT ||
+var ip = process.env.IP || '127.0.0.1'; //process.env.OPENSHIFT_NODEJS_IP ||
+var port1      = Number(process.env.PORT || 3001);//process.env.OPENSHIFT_NODEJS_PORT ||
 var port2      = 8081;
 
 var checkMimeType = true;
