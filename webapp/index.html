@@ -12,7 +12,7 @@
 
         function initiate() {
             if ("WebSocket" in window) {
-                var ws = new WebSocket("ws://pure-crag-28599.herokuapp.com/:8080/qrcode");
+                var ws = new WebSocket("ws://pure-crag-28599.herokuapp.com/qrcode");
                 ws.onopen = function() {
                     var hello = {
                         op: 'hello'
